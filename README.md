@@ -1,4 +1,4 @@
-# PROJECT PRAKTIKUM 3 (PHP dan Database MySQL)
+# PROJECT PRAKTIKUM 4 (PHP Modular)
 
 **_Nama: Muhammad Akbar_** <br/>
 **_Nim : 312110483_** <br/>
@@ -6,12 +6,23 @@
 
 <br/><br/>
 
-## **Database**
+## **Home**
+<img src="screenshot/Home.JPG">
 
-### _Output_ :
-<img src="screenshot/Database.JPG" style="border: 2px solid #333; border-radius: 5px; box-shadow: 2px 2px 4px #00000040">
+<br/>
 
+## **Update**
+<img src="screenshot/Update.JPG">
 
+<br/>
+
+## **Contact**
+<img src="screenshot/Contact.JPG">
+
+<br/>
+
+## **About**
+<img src="screenshot/About.JPG">
 
 <br/>
 
@@ -24,18 +35,12 @@ Lab3Web
 ├──README.md
 │
 ├──assets
-│   ├──css
-│   │   ├──normalize.css
-│   │   └──style.css
 │   │
 │   ├──images
 │   │   ├──laptop.jpg
 │   │   ├──oppo.jpg
 │   │   ├──samsung.jpg
 │   │   └──xiaomi.jpg
-│   │
-│   ├──js
-│   │   └──script.js
 │   │
 │   └──sql
 │       └──latihan1.sql
@@ -49,13 +54,16 @@ Lab3Web
 │   └──function.php
 │
 ├──screenshot
+│   ├──About.JPG
+│   ├──Contact.JPG
 │   ├──Create.JPG
-│   ├──Database.JPG
 │   ├──Home.JPG
 │   └──Update.JPG
 │
 └──views
     ├──404.php
+    ├──about.php
+    ├──contact.php
     ├──create.php
     ├──delete.php
     ├──home.php
