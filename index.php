@@ -7,7 +7,8 @@ require_once 'requires/function.php';
 
 // Get requested URL path
 $url = @$_REQUEST['url'];
-$id = @$_REQUEST['id'];
+
+$url = strpos(@$_REQUEST["url"], "/") ? str_split(@$_REQUEST["url"], strpos(@$_REQUEST["url"], "/"))[0] : @$_REQUEST['url'];
 
 // Check requested URL path and set page
 switch ($url) {
@@ -19,10 +20,16 @@ switch ($url) {
     $page = 'create';
     break;
   case 'update':
-    $page = $id ? 'update' : '404';
+    $page = $url ? 'update' : '404';
     break;
   case 'delete':
-    $page = isset($_GET['id']) ? isValidId($_GET['id']) ? 'delete' : '404' : '404';
+    $page = $url ? 'delete' : '404';
+    break;
+  case 'contact':
+    $page = 'contact';
+    break;
+  case 'about':
+    $page = 'about';
     break;
   default:
     $page = '404';
@@ -36,7 +43,7 @@ if ($page === '404') {
 ?>
 
 <!-- Include view file -->
-<div class="container">
+<div class="max-w-[1000px] m-auto mt-5 p-5">
   <?php
   require __DIR__ . '/views/' . $page . '.php';
   ?>

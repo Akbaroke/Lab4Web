@@ -67,5 +67,5 @@ if (isset($_POST['update'])) {
 	}
 	$sql .= " WHERE id_barang = '{$id}'";
 	$result = mysqli_query($conn, $sql);
-	header('Location: home');
+	header('Location: ../home');
 }
