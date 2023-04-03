@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 
   <!-- css -->
-  <link rel="stylesheet" href="/lab3web/assets/css/normalize.css">
-  <link rel="stylesheet" href="/lab3web/assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 
   <title>Project Praktikum 3 | Muhammad Akbar</title>
 </head>
